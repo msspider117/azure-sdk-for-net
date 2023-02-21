@@ -45,6 +45,7 @@ namespace Azure.Identity.Tests
                 var options = new EnvironmentCredentialOptions
                 {
                     Transport = config.Transport,
+                    TokenCachePersistenceOptions = config.TokenCachePersistenceOptions,
                     DisableInstanceDiscovery = config.DisableMetadataDiscovery ?? false
                 };
 
